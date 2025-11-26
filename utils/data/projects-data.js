@@ -5,8 +5,8 @@ export const projectsData = [
         description: "Me and my team built an Shift Cargo Service Ltd. . I have developed API using html, css, javascript, react, tailwind, axios , Google, and Facebook for the authentication system. Built AI assistants using OpenAI's latest model and trained using our dataset. Voice messages are converted to text using AWS Transcribe. The app fetches data from Google Sheets and generates a PDF term sheet, sent via AWS SES.",
         tools: ['HTML5', 'CSS', 'JavaScript', 'Tailwind', 'React', 'React Router', 'Axios'],
         role: 'frontend Developer',
-        code: '',
-        demo: '',
+        code: 'https://github.com/nobodipdebnath/Swift-Express-Cargo',
+        demo: 'https://swift-express-cargo-jade.vercel.app/',
     },
     {
         id: 2,
