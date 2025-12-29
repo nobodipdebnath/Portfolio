@@ -25,7 +25,9 @@ export default function RootLayout({ children }) {
         <main className="min-h-screen relative mx-auto px-6 sm:px-12 max-w-[1400px] text-white">
           <Navbar />
           {children}
-          <ScrollToTop />
+          <div className="sm:hidden lg:block">
+            <ScrollToTop />
+          </div>
         </main>
         <Footer />
       </body>
