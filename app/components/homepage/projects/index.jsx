@@ -1,21 +1,39 @@
+"use client"; // যদি Next.js 13+ app directory ব্যবহার করো
+
 import { projectsData } from '@/utils/data/projects-data';
 import ProjectCard from './project-card';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Projects = () => {
+  const handleViewMore = () => {
+    toast.info("Not Available!", {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
+  }
 
   return (
-    <div id='projects' className="relative z-50  my-12 lg:my-24">
+    <div id='projects' className="relative z-50 my-12 lg:my-24">
+      <ToastContainer />
+      
       <div className="sticky top-10">
-        <div className="w-[80px] h-[80px] bg-violet-100 rounded-full absolute -top-3 left-0 translate-x-1/2 filter blur-3xl  opacity-30"></div>
+        <div className="w-[80px] h-[80px] bg-violet-100 rounded-full absolute -top-3 left-0 translate-x-1/2 filter blur-3xl opacity-30"></div>
         <div className="flex items-center justify-start relative">
-          <span className="bg-[#1a1443] absolute left-0  w-fit text-white px-5 py-3 text-xl rounded-md">
+          <span className="bg-[#1a1443] absolute left-0 w-fit text-white px-5 py-3 text-xl rounded-md">
             PROJECTS
           </span>
           <span className="w-full h-[2px] bg-[#1a1443]"></span>
         </div>
       </div>
 
-      <div className="pt-24">
+      <div className="pt-24 mb-10">
         <div className="flex flex-col gap-6">
           {projectsData.slice(0, 6).map((project, index) => (
             <div
@@ -29,6 +47,15 @@ const Projects = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      <div className="absolute -bottom-20 -translate-x-1/2 left-1/2">
+        <button
+          onClick={handleViewMore}
+          className='py-3 px-10 rounded-full text-lg hover:bg-white hover:text-black duration-500 font-semibold text-white border border-white cursor-pointer'
+        >
+          View More
+        </button>
       </div>
     </div>
   );
