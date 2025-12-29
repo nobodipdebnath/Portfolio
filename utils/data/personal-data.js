@@ -11,5 +11,5 @@ export const personalData = {
   linkedIn: 'www.linkedin.com/in/nobodip-debnath-676928351',
   twitter: 'https://x.com/DebnathD46507',
   instagram: 'https://www.instagram.com/nobodip.debnath01/',
-  resume: "https://drive.google.com/drive/u/0/home"
+  resume: "https://drive.google.com/file/d/1YFYL6VqZG4AQ2LosNS80DcZ3nH1oF4UI/view"
 }
