@@ -19,8 +19,9 @@ function Navbar() {
           </Link>
         </div>
         <div className="flex lg:hidden flex-shrink-0 items-center">
-          <Link href="/" className=" text-[#16f2b3]  text-3xl font-bold">
-            Nobodip
+          <Link href="/" className=" flex items-center gap-2 text-[#16f2b3]  text-3xl font-bold">
+            <span>Nobodip</span>
+            <span className="h-2 w-2 rounded-full bg-[#16f2b3]"></span>
           </Link>
         </div>
 
