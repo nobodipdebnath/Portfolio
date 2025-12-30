@@ -18,16 +18,18 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="https://i.ibb.co.com/0VhW9CLP/0db8d0122c960bcb6bed5e257980f47e.jpg" />
+        <link
+          rel="icon"
+          href="https://i.ibb.co.com/0VhW9CLP/0db8d0122c960bcb6bed5e257980f47e.jpg"
+        />
       </head>
       <body className={inter.className}>
         <ToastContainer />
         <main className="min-h-screen relative mx-auto px-6 sm:px-12 max-w-[1400px] text-white">
           <Navbar />
           {children}
-          <div className="sm:hidden lg:block">
-            <ScrollToTop />
-          </div>
+
+          <ScrollToTop />
         </main>
         <Footer />
       </body>
