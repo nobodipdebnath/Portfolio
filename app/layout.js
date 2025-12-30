@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         <ToastContainer />
-        <main className="min-h-screen relative mx-auto px-6 sm:px-12 max-w-[1400px] text-white">
+        <main className="min-h-screen relative mx-auto lg:px-6 px-4  max-w-[1400px] text-white">
           <Navbar />
           {children}
 
