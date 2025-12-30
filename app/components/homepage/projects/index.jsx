@@ -20,7 +20,7 @@ const Projects = () => {
   }
 
   return (
-    <div id='projects' className="relative z-50 my-12 lg:my-24">
+    <div id='projects' className="relative z-50 my-20 md:my-12  lg:my-24">
       <ToastContainer />
       
       <div className="sticky top-10">
@@ -49,10 +49,10 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="absolute -bottom-20 -translate-x-1/2 left-1/2">
+      <div className="absolute -bottom-16 lg:-bottom-20 -translate-x-1/2 left-1/2">
         <button
           onClick={handleViewMore}
-          className='py-3 px-10 rounded-full text-lg hover:bg-white hover:text-black duration-500 font-semibold text-white border border-white cursor-pointer'
+          className='py-3 px-7 lg:px-10 rounded-full text-sm lg:text-lg hover:bg-white hover:text-black duration-500 font-semibold text-white border border-white cursor-pointer'
         >
           View More
         </button>
