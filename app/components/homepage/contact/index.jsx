@@ -3,12 +3,12 @@ import { personalData } from '@/utils/data/personal-data';
 import Link from 'next/link';
 import { BiLogoLinkedin } from "react-icons/bi";
 import { CiLocationOn } from "react-icons/ci";
-import { FaFacebook, FaStackOverflow } from 'react-icons/fa';
+import { FaFacebook} from 'react-icons/fa';
 import { FaInstagram, FaXTwitter } from "react-icons/fa6";
 import { IoLogoGithub, IoMdCall } from "react-icons/io";
-import { MdAlternateEmail } from "react-icons/md";
 import { IoIosMail } from "react-icons/io";
-import ContactForm from './contact-form';
+import ContactForm from './contact';
+
 
 function ContactSection() {
 
@@ -21,8 +21,9 @@ function ContactSection() {
         </span>
         <span className="h-36 w-[2px] bg-[#1a1443]"></span>
       </div>
+      
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-        <ContactForm />
+        <ContactForm></ContactForm>
         <div className="lg:w-3/4 ">
           <div className="flex flex-col gap-5 lg:gap-9">
             <p className="text-sm md:text-xl flex items-center gap-3">
